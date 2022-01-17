@@ -1,0 +1,29 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Document
+    style 
+      include rankPage.css
+  body 
+    form(action=`/rank`, method="get")
+      input(type="hidden" id="offset" value=offset)
+      input(type="hidden" id="count" value=count)
+      table
+        tr 
+          td 이름
+          td 점수
+        -for(let i=0;i<index;i++) {
+          tr 
+            td=apple[i].NAME
+            td=apple[i].SCORE
+        -}
+      p
+        input(type="button" onclick="prev()" value="이전")
+        input(type="button" onclick="next()" value="다음")
+      p
+        input(type="button" onclick="location.href='/'" value="홈")
+  script
+    include rankPage.js

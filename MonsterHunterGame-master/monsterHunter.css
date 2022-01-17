@@ -1,0 +1,141 @@
+/* version : 1.04 ver */
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+*{
+  box-sizing: content-box;
+}
+
+#container{
+  margin: 0 auto;
+  width: 2000px;
+  font-family: 'Single Day', cursive;
+}
+
+/* --------------------------------------------------- */
+/* Header 영역 */
+
+/* TITLE */
+#title{
+  margin: 30px auto;
+  width: 600px;
+}
+
+/* Header 영역 */
+/* --------------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* LEFTSIDE 영역 */
+
+/* LEFTSIDE */
+#leftSide{
+  float : left;
+  width: 29%;
+  height: 800px;
+  border: 5px solid #8B6331;
+  background-color: #8B5927;
+  border-radius: 30px;
+}
+
+/* LEFTTABLE */
+#lefttable{
+  margin: 200px auto;
+  table-layout: fixed;
+}
+
+/* LEFTTABLE TD */
+#lefttable td{
+  width: 70px;
+  height: 70px;
+}
+
+/* LEFTTABLE IMG */
+#lefttable img{
+  width: 70px;
+  height: 70px;
+  transform: scale(1.5);
+}
+
+#updown {
+  margin-left: 5px;
+}
+
+/* LEFTSIDE 영역 */
+/* --------------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* MAIN 영역 */
+
+/* MAIN */
+main{
+  width: 40%;
+  height: 800px;
+  background-color: #D68642;
+  border: 5px solid #DC9146;
+  border-radius: 30px;
+  float: left;
+
+}
+
+/* MAINTABLE */
+#maintable{
+  margin: 65px auto;
+  border: 10px solid #D27328;
+  border-spacing: 10px;
+  border-radius: 10px;
+  table-layout: fixed;
+  background-color: bisque;
+}
+
+/* MAINTABLE TD */
+#maintable td{
+  border: 5px solid #FFB432;
+  width: 190px;
+  height: 190px;
+  border-radius: 20px;
+  background-color: #A4A4A4;
+}
+
+/* MAINTABLE IMG */
+#maintable td img { 
+  display: block;
+  margin: 0 auto;
+  transform: scale(2.5);
+}
+
+/* MAIN 영역 */
+/* --------------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* RIGHTSIDE 영역 */
+
+/* RIGHTSIDE */
+#rightSide{
+  float: left;
+  width: 29%;
+  height: 800px;
+  border: 5px solid #8B6331;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #8B5927;
+  border-radius: 30px;
+  color: #FFE650;
+}
+
+/* RIGHTSIDE 영역 */
+/* --------------------------------------------------- */
+
+/* --------------------------------------------------- */
+/* FOOTER 영역 */
+
+/* FOOTER */
+footer{
+  width : 700px;
+  font-size: 13pt;
+  font-weight: bold;
+}
+
+/* FOOTER 영역 */
+/* --------------------------------------------------- */
+
+
+

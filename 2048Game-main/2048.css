@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+/* CSS */
+#container{
+  width: 500px;
+  margin: 0 auto;
+  font-family: 'Jua', sans-serif;
+}
+
+/* Header */
+header{
+  margin-top: 40px;
+}
+
+#title{
+  float: left;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 0;
+  color: #8d7863;
+}
+
+#maker{
+  clear: left;
+  float: left;
+  font-size: 20px;
+  color: #8d7863;
+}
+/* Header */
+
+/* Score */
+#score{
+  float: right;
+  font-size: 30px;
+  width: 80px;
+  height: 50px;
+  line-height: 70px;
+  margin-top: 60px;
+  padding: 10px;
+  border: 3px solid #8d7863;
+  text-align: center;
+  border-radius: 10px;
+  color: #8d7863;
+}
+
+#subscore{
+  float: right;
+  position: absolute;
+  right: 750px;
+  margin-top: 70px;
+  color: rgba(0, 0, 0, 0.37);
+}
+/* Score */
+
+/* Table */
+table{
+  float: left;
+  width: 500px;
+  height: 500px;
+  margin-top: 40px;
+  padding: 5px;
+  border-radius: 10px;
+  border-spacing: 10px;
+  background: #bbada0;
+  table-layout: fixed;
+}
+
+table td{
+  width: 112px;
+  height: 113px;
+  border-radius: 10px;
+  background-color: #eee4da59;
+  text-align: center;
+  font-size: 40px;
+  color: #cc935e;
+}
+/* Table */

@@ -1,0 +1,30 @@
+/* version : 1.01 ver */
+*{
+  box-sizing: content-box;
+}
+
+#container{
+  background-image: url('Images/Blank_Go_board.png');
+  background-size: 1237px;
+  background-repeat: no-repeat;
+  height: 1237px;
+  width: 1237px;
+}
+
+#mainTable{
+  width: 1237px;
+  height: 1237px;
+}
+
+table {
+  width: 1237px;
+  height: 1237px;
+  table-layout: fixed;
+}
+
+table td{
+  width: 63px;
+  height: 63px;
+  padding: 0px;
+  text-align: center;
+}

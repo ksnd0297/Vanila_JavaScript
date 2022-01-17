@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- version : 1.01 ver-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UB-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renju</title>
+  <link rel="stylesheet" href="Renju.css">
+</head>
+
+<body>
+  <div id="container">
+    <div id="mainTable">
+      <table> 
+        <tr>
+          <td id="A1" onClick="put(this.id)"></td>
+          <td id="A2" onClick="put(this.id)"></td>
+          <td id="A3" onClick="put(this.id)"></td>
+          <td id="A4" onClick="put(this.id)"></td>
+          <td id="A5" onClick="put(this.id)"></td>
+          <td id="A6" onClick="put(this.id)"></td>
+          <td id="A7" onClick="put(this.id)"></td>
+          <td id="A8" onClick="put(this.id)"></td>
+          <td id="A9" onClick="put(this.id)"></td>
+          <td id="A10" onClick="put(this.id)"></td>
+          <td id="A11" onClick="put(this.id)"></td>
+          <td id="A12" onClick="put(this.id)"></td>
+          <td id="A13" onClick="put(this.id)"></td>
+          <td id="A14" onClick="put(this.id)"></td>
+          <td id="A15" onClick="put(this.id)"></td>
+          <td id="A16" onClick="put(this.id)"></td>
+          <td id="A17" onClick="put(this.id)"></td>
+          <td id="A18" onClick="put(this.id)"></td>
+          <td id="A19" onClick="put(this.id)"></td>
+        </tr>
+        <tr">
+          <td id="B1" onClick="put(this.id)"></td>
+          <td id="B2" onClick="put(this.id)"></td>
+          <td id="B3" onClick="put(this.id)"></td>
+          <td id="B4" onClick="put(this.id)"></td>
+          <td id="B5" onClick="put(this.id)"></td>
+          <td id="B6" onClick="put(this.id)"></td>
+          <td id="B7" onClick="put(this.id)"></td>
+          <td id="B8" onClick="put(this.id)"></td>
+          <td id="B9" onClick="put(this.id)"></td>
+          <td id="B10" onClick="put(this.id)"></td>
+          <td id="B11" onClick="put(this.id)"></td>
+          <td id="B12" onClick="put(this.id)"></td>
+          <td id="B13" onClick="put(this.id)"></td>
+          <td id="B14" onClick="put(this.id)"></td>
+          <td id="B15" onClick="put(this.id)"></td>
+          <td id="B16" onClick="put(this.id)"></td>
+          <td id="B17" onClick="put(this.id)"></td>
+          <td id="B18" onClick="put(this.id)"></td>
+          <td id="B19" onClick="put(this.id)"></td>
+        </tr>
+        <tr">
+          <td id="C1" onClick="put(this.id)"></td>
+          <td id="C2" onClick="put(this.id)"></td>
+          <td id="C3" onClick="put(this.id)"></td>
+          <td id="C4" onClick="put(this.id)"></td>
+          <td id="C5" onClick="put(this.id)"></td>
+          <td id="C6" onClick="put(this.id)"></td>
+          <td id="C7" onClick="put(this.id)"></td>
+          <td id="C8" onClick="put(this.id)"></td>
+          <td id="C9" onClick="put(this.id)"></td>
+          <td id="C10" onClick="put(this.id)"></td>
+          <td id="C11" onClick="put(this.id)"></td>
+          <td id="C12" onClick="put(this.id)"></td>
+          <td id="C13" onClick="put(this.id)"></td>
+          <td id="C14" onClick="put(this.id)"></td>
+          <td id="C15" onClick="put(this.id)"></td>
+          <td id="C16" onClick="put(this.id)"></td>
+          <td id="C17" onClick="put(this.id)"></td>
+          <td id="C18" onClick="put(this.id)"></td>
+          <td id="C19" onClick="put(this.id)"></td>
+        </tr>
+        <tr>
+          <td id="D1" onClick="put(this.id)"></td>
+          <td id="D2" onClick="put(this.id)"></td>
+          <td id="D3" onClick="put(this.id)"></td>
+          <td id="D4" onClick="put(this.id)"></td>
+          <td id="D5" onClick="put(this.id)"></td>
+          <td id="D6" onClick="put(this.id)"></td>
+          <td id="D7" onClick="put(this.id)"></td>
+          <td id="D8" onClick="put(this.id)"></td>
+          <td id="D9" onClick="put(this.id)"></td>
+          <td id="D10" onClick="put(this.id)"></td>
+          <td id="D11" onClick="put(this.id)"></td>
+          <td id="D12" onClick="put(this.id)"></td>
+          <td id="D13" onClick="put(this.id)"></td>
+          <td id="D14" onClick="put(this.id)"></td>
+          <td id="D15" onClick="put(this.id)"></td>
+          <td id="D16" onClick="put(this.id)"></td>
+          <td id="D17" onClick="put(this.id)"></td>
+          <td id="D18" onClick="put(this.id)"></td>
+          <td id="D19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="E">
+          <td id="E1" onClick="put(this.id)"></td>
+          <td id="E2" onClick="put(this.id)"></td>
+          <td id="E3" onClick="put(this.id)"></td>
+          <td id="E4" onClick="put(this.id)"></td>
+          <td id="E5" onClick="put(this.id)"></td>
+          <td id="E6" onClick="put(this.id)"></td>
+          <td id="E7" onClick="put(this.id)"></td>
+          <td id="E8" onClick="put(this.id)"></td>
+          <td id="E9" onClick="put(this.id)"></td>
+          <td id="E10" onClick="put(this.id)"></td>
+          <td id="E11" onClick="put(this.id)"></td>
+          <td id="E12" onClick="put(this.id)"></td>
+          <td id="E13" onClick="put(this.id)"></td>
+          <td id="E14" onClick="put(this.id)"></td>
+          <td id="E15" onClick="put(this.id)"></td>
+          <td id="E16" onClick="put(this.id)"></td>
+          <td id="E17" onClick="put(this.id)"></td>
+          <td id="E18" onClick="put(this.id)"></td>
+          <td id="E19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="F">
+          <td id="F1" onClick="put(this.id)"></td>
+          <td id="F2" onClick="put(this.id)"></td>
+          <td id="F3" onClick="put(this.id)"></td>
+          <td id="F4" onClick="put(this.id)"></td>
+          <td id="F5" onClick="put(this.id)"></td>
+          <td id="F6" onClick="put(this.id)"></td>
+          <td id="F7" onClick="put(this.id)"></td>
+          <td id="F8" onClick="put(this.id)"></td>
+          <td id="F9" onClick="put(this.id)"></td>
+          <td id="F10" onClick="put(this.id)"></td>
+          <td id="F11" onClick="put(this.id)"></td>
+          <td id="F12" onClick="put(this.id)"></td>
+          <td id="F13" onClick="put(this.id)"></td>
+          <td id="F14" onClick="put(this.id)"></td>
+          <td id="F15" onClick="put(this.id)"></td>
+          <td id="F16" onClick="put(this.id)"></td>
+          <td id="F17" onClick="put(this.id)"></td>
+          <td id="F18" onClick="put(this.id)"></td>
+          <td id="F19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="G">
+          <td id="G1" onClick="put(this.id)"></td>
+          <td id="G2" onClick="put(this.id)"></td>
+          <td id="G3" onClick="put(this.id)"></td>
+          <td id="G4" onClick="put(this.id)"></td>
+          <td id="G5" onClick="put(this.id)"></td>
+          <td id="G6" onClick="put(this.id)"></td>
+          <td id="G7" onClick="put(this.id)"></td>
+          <td id="G8" onClick="put(this.id)"></td>
+          <td id="G9" onClick="put(this.id)"></td>
+          <td id="G10" onClick="put(this.id)"></td>
+          <td id="G11" onClick="put(this.id)"></td>
+          <td id="G12" onClick="put(this.id)"></td>
+          <td id="G13" onClick="put(this.id)"></td>
+          <td id="G14" onClick="put(this.id)"></td>
+          <td id="G15" onClick="put(this.id)"></td>
+          <td id="G16" onClick="put(this.id)"></td>
+          <td id="G17" onClick="put(this.id)"></td>
+          <td id="G18" onClick="put(this.id)"></td>
+          <td id="G19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="H">
+          <td id="H1" onClick="put(this.id)"></td>
+          <td id="H2" onClick="put(this.id)"></td>
+          <td id="H3" onClick="put(this.id)"></td>
+          <td id="H4" onClick="put(this.id)"></td>
+          <td id="H5" onClick="put(this.id)"></td>
+          <td id="H6" onClick="put(this.id)"></td>
+          <td id="H7" onClick="put(this.id)"></td>
+          <td id="H8" onClick="put(this.id)"></td>
+          <td id="H9" onClick="put(this.id)"></td>
+          <td id="H10" onClick="put(this.id)"></td>
+          <td id="H11" onClick="put(this.id)"></td>
+          <td id="H12" onClick="put(this.id)"></td>
+          <td id="H13" onClick="put(this.id)"></td>
+          <td id="H14" onClick="put(this.id)"></td>
+          <td id="H15" onClick="put(this.id)"></td>
+          <td id="H16" onClick="put(this.id)"></td>
+          <td id="H17" onClick="put(this.id)"></td>
+          <td id="H18" onClick="put(this.id)"></td>
+          <td id="H19" onClick="put(this.id)"></td>
+        </tr>
+        <tr>
+          <td id="I1" onClick="put(this.id)"></td>
+          <td id="I2" onClick="put(this.id)"></td>
+          <td id="I3" onClick="put(this.id)"></td>
+          <td id="I4" onClick="put(this.id)"></td>
+          <td id="I5" onClick="put(this.id)"></td>
+          <td id="I6" onClick="put(this.id)"></td>
+          <td id="I7" onClick="put(this.id)"></td>
+          <td id="I8" onClick="put(this.id)"></td>
+          <td id="I9" onClick="put(this.id)"></td>
+          <td id="I10" onClick="put(this.id)"></td>
+          <td id="I11" onClick="put(this.id)"></td>
+          <td id="I12" onClick="put(this.id)"></td>
+          <td id="I13" onClick="put(this.id)"></td>
+          <td id="I14" onClick="put(this.id)"></td>
+          <td id="I15" onClick="put(this.id)"></td>
+          <td id="I16" onClick="put(this.id)"></td>
+          <td id="I17" onClick="put(this.id)"></td>
+          <td id="I18" onClick="put(this.id)"></td>
+          <td id="I19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="J">
+          <td id="J1" onClick="put(this.id)"></td>
+          <td id="J2" onClick="put(this.id)"></td>
+          <td id="J3" onClick="put(this.id)"></td>
+          <td id="J4" onClick="put(this.id)"></td>
+          <td id="J5" onClick="put(this.id)"></td>
+          <td id="J6" onClick="put(this.id)"></td>
+          <td id="J7" onClick="put(this.id)"></td>
+          <td id="J8" onClick="put(this.id)"></td>
+          <td id="J9" onClick="put(this.id)"></td>
+          <td id="J10" onClick="put(this.id)"></td>
+          <td id="J11" onClick="put(this.id)"></td>
+          <td id="J12" onClick="put(this.id)"></td>
+          <td id="J13" onClick="put(this.id)"></td>
+          <td id="J14" onClick="put(this.id)"></td>
+          <td id="J15" onClick="put(this.id)"></td>
+          <td id="J16" onClick="put(this.id)"></td>
+          <td id="J17" onClick="put(this.id)"></td>
+          <td id="J18" onClick="put(this.id)"></td>
+          <td id="J19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="K">
+          <td id="K1" onClick="put(this.id)"></td>
+          <td id="K2" onClick="put(this.id)"></td>
+          <td id="K3" onClick="put(this.id)"></td>
+          <td id="K4" onClick="put(this.id)"></td>
+          <td id="K5" onClick="put(this.id)"></td>
+          <td id="K6" onClick="put(this.id)"></td>
+          <td id="K7" onClick="put(this.id)"></td>
+          <td id="K8" onClick="put(this.id)"></td>
+          <td id="K9" onClick="put(this.id)"></td>
+          <td id="K10" onClick="put(this.id)"></td>
+          <td id="K11" onClick="put(this.id)"></td>
+          <td id="K12" onClick="put(this.id)"></td>
+          <td id="K13" onClick="put(this.id)"></td>
+          <td id="K14" onClick="put(this.id)"></td>
+          <td id="K15" onClick="put(this.id)"></td>
+          <td id="K16" onClick="put(this.id)"></td>
+          <td id="K17" onClick="put(this.id)"></td>
+          <td id="K18" onClick="put(this.id)"></td>
+          <td id="K19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="L">
+          <td id="L1" onClick="put(this.id)"></td>
+          <td id="L2" onClick="put(this.id)"></td>
+          <td id="L3" onClick="put(this.id)"></td>
+          <td id="L4" onClick="put(this.id)"></td>
+          <td id="L5" onClick="put(this.id)"></td>
+          <td id="L6" onClick="put(this.id)"></td>
+          <td id="L7" onClick="put(this.id)"></td>
+          <td id="L8" onClick="put(this.id)"></td>
+          <td id="L9" onClick="put(this.id)"></td>
+          <td id="L10" onClick="put(this.id)"></td>
+          <td id="L11" onClick="put(this.id)"></td>
+          <td id="L12" onClick="put(this.id)"></td>
+          <td id="L13" onClick="put(this.id)"></td>
+          <td id="L14" onClick="put(this.id)"></td>
+          <td id="L15" onClick="put(this.id)"></td>
+          <td id="L16" onClick="put(this.id)"></td>
+          <td id="L17" onClick="put(this.id)"></td>
+          <td id="L18" onClick="put(this.id)"></td>
+          <td id="L19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="M">
+          <td id="M1" onClick="put(this.id)"></td>
+          <td id="M2" onClick="put(this.id)"></td>
+          <td id="M3" onClick="put(this.id)"></td>
+          <td id="M4" onClick="put(this.id)"></td>
+          <td id="M5" onClick="put(this.id)"></td>
+          <td id="M6" onClick="put(this.id)"></td>
+          <td id="M7" onClick="put(this.id)"></td>
+          <td id="M8" onClick="put(this.id)"></td>
+          <td id="M9" onClick="put(this.id)"></td>
+          <td id="M10" onClick="put(this.id)"></td>
+          <td id="M11" onClick="put(this.id)"></td>
+          <td id="M12" onClick="put(this.id)"></td>
+          <td id="M13" onClick="put(this.id)"></td>
+          <td id="M14" onClick="put(this.id)"></td>
+          <td id="M15" onClick="put(this.id)"></td>
+          <td id="M16" onClick="put(this.id)"></td>
+          <td id="M17" onClick="put(this.id)"></td>
+          <td id="M18" onClick="put(this.id)"></td>
+          <td id="M19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="N">
+          <td id="N1" onClick="put(this.id)"></td>
+          <td id="N2" onClick="put(this.id)"></td>
+          <td id="N3" onClick="put(this.id)"></td>
+          <td id="N4" onClick="put(this.id)"></td>
+          <td id="N5" onClick="put(this.id)"></td>
+          <td id="N6" onClick="put(this.id)"></td>
+          <td id="N7" onClick="put(this.id)"></td>
+          <td id="N8" onClick="put(this.id)"></td>
+          <td id="N9" onClick="put(this.id)"></td>
+          <td id="N10" onClick="put(this.id)"></td>
+          <td id="N11" onClick="put(this.id)"></td>
+          <td id="N12" onClick="put(this.id)"></td>
+          <td id="N13" onClick="put(this.id)"></td>
+          <td id="N14" onClick="put(this.id)"></td>
+          <td id="N15" onClick="put(this.id)"></td>
+          <td id="N16" onClick="put(this.id)"></td>
+          <td id="N17" onClick="put(this.id)"></td>
+          <td id="N18" onClick="put(this.id)"></td>
+          <td id="N19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="O">
+          <td id="O1" onClick="put(this.id)"></td>
+          <td id="O2" onClick="put(this.id)"></td>
+          <td id="O3" onClick="put(this.id)"></td>
+          <td id="O4" onClick="put(this.id)"></td>
+          <td id="O5" onClick="put(this.id)"></td>
+          <td id="O6" onClick="put(this.id)"></td>
+          <td id="O7" onClick="put(this.id)"></td>
+          <td id="O8" onClick="put(this.id)"></td>
+          <td id="O9" onClick="put(this.id)"></td>
+          <td id="O10" onClick="put(this.id)"></td>
+          <td id="O11" onClick="put(this.id)"></td>
+          <td id="O12" onClick="put(this.id)"></td>
+          <td id="O13" onClick="put(this.id)"></td>
+          <td id="O14" onClick="put(this.id)"></td>
+          <td id="O15" onClick="put(this.id)"></td>
+          <td id="O16" onClick="put(this.id)"></td>
+          <td id="O17" onClick="put(this.id)"></td>
+          <td id="O18" onClick="put(this.id)"></td>
+          <td id="O19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="P">
+          <td id="P1" onClick="put(this.id)"></td>
+          <td id="P2" onClick="put(this.id)"></td>
+          <td id="P3" onClick="put(this.id)"></td>
+          <td id="P4" onClick="put(this.id)"></td>
+          <td id="P5" onClick="put(this.id)"></td>
+          <td id="P6" onClick="put(this.id)"></td>
+          <td id="P7" onClick="put(this.id)"></td>
+          <td id="P8" onClick="put(this.id)"></td>
+          <td id="P9" onClick="put(this.id)"></td>
+          <td id="P10" onClick="put(this.id)"></td>
+          <td id="P11" onClick="put(this.id)"></td>
+          <td id="P12" onClick="put(this.id)"></td>
+          <td id="P13" onClick="put(this.id)"></td>
+          <td id="P14" onClick="put(this.id)"></td>
+          <td id="P15" onClick="put(this.id)"></td>
+          <td id="P16" onClick="put(this.id)"></td>
+          <td id="P17" onClick="put(this.id)"></td>
+          <td id="P18" onClick="put(this.id)"></td>
+          <td id="P19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="Q">
+          <td id="Q1" onClick="put(this.id)"></td>
+          <td id="Q2" onClick="put(this.id)"></td>
+          <td id="Q3" onClick="put(this.id)"></td>
+          <td id="Q4" onClick="put(this.id)"></td>
+          <td id="Q5" onClick="put(this.id)"></td>
+          <td id="Q6" onClick="put(this.id)"></td>
+          <td id="Q7" onClick="put(this.id)"></td>
+          <td id="Q8" onClick="put(this.id)"></td>
+          <td id="Q9" onClick="put(this.id)"></td>
+          <td id="Q10" onClick="put(this.id)"></td>
+          <td id="Q11" onClick="put(this.id)"></td>
+          <td id="Q12" onClick="put(this.id)"></td>
+          <td id="Q13" onClick="put(this.id)"></td>
+          <td id="Q14" onClick="put(this.id)"></td>
+          <td id="Q15" onClick="put(this.id)"></td>
+          <td id="Q16" onClick="put(this.id)"></td>
+          <td id="Q17" onClick="put(this.id)"></td>
+          <td id="Q18" onClick="put(this.id)"></td>
+          <td id="Q19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="R">
+          <td id="R1" onClick="put(this.id)"></td>
+          <td id="R2" onClick="put(this.id)"></td>
+          <td id="R3" onClick="put(this.id)"></td>
+          <td id="R4" onClick="put(this.id)"></td>
+          <td id="R5" onClick="put(this.id)"></td>
+          <td id="R6" onClick="put(this.id)"></td>
+          <td id="R7" onClick="put(this.id)"></td>
+          <td id="R8" onClick="put(this.id)"></td>
+          <td id="R9" onClick="put(this.id)"></td>
+          <td id="R10" onClick="put(this.id)"></td>
+          <td id="R11" onClick="put(this.id)"></td>
+          <td id="R12" onClick="put(this.id)"></td>
+          <td id="R13" onClick="put(this.id)"></td>
+          <td id="R14" onClick="put(this.id)"></td>
+          <td id="R15" onClick="put(this.id)"></td>
+          <td id="R16" onClick="put(this.id)"></td>
+          <td id="R17" onClick="put(this.id)"></td>
+          <td id="R18" onClick="put(this.id)"></td>
+          <td id="R19" onClick="put(this.id)"></td>
+        </tr>
+        <tr id="S">
+          <td id="S1" onClick="put(this.id)"></td>
+          <td id="S2" onClick="put(this.id)"></td>
+          <td id="S3" onClick="put(this.id)"></td>
+          <td id="S4" onClick="put(this.id)"></td>
+          <td id="S5" onClick="put(this.id)"></td>
+          <td id="S6" onClick="put(this.id)"></td>
+          <td id="S7" onClick="put(this.id)"></td>
+          <td id="S8" onClick="put(this.id)"></td>
+          <td id="S9" onClick="put(this.id)"></td>
+          <td id="S10" onClick="put(this.id)"></td>
+          <td id="S11" onClick="put(this.id)"></td>
+          <td id="S12" onClick="put(this.id)"></td>
+          <td id="S13" onClick="put(this.id)"></td>
+          <td id="S14" onClick="put(this.id)"></td>
+          <td id="S15" onClick="put(this.id)"></td>
+          <td id="S16" onClick="put(this.id)"></td>
+          <td id="S17" onClick="put(this.id)"></td>
+          <td id="S18" onClick="put(this.id)"></td>
+          <td id="S19" onClick="put(this.id)"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+<script src="Renju.js"></script>
+</html>

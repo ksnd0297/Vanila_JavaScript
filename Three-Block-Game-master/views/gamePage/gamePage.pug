@@ -1,0 +1,24 @@
+html 
+  head 
+    title Apple
+    style
+      include gamePage.css
+  body 
+    form(action='/game/Update' name="submit" method ='post')
+      input(type="hidden" name="hiddenScore" id="hiddenScore")
+      input(type="hidden" name="hiddenName" id="hiddenName")
+      #container 
+        header 
+          #timer 20
+          #title Apple
+          #score 0
+        body
+          table
+            -let id = 0; for(let y=0,N=10;y<N;y++) {
+              tr 
+                -for(let x=0,N=10;x<N;x++) {
+                  td(id = id++)
+                -}
+            -}
+  script 
+    include gamePage.js
